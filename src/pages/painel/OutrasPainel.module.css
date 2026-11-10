@@ -1,0 +1,51 @@
+.grade {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+  gap: var(--e3);
+}
+
+.grade > li {
+  display: flex;
+  flex-direction: column;
+  gap: var(--e1);
+}
+
+.topo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--e2);
+}
+
+.nome {
+  font-size: var(--t-corpo);
+  font-weight: 800;
+}
+
+.conectores {
+  margin: 0;
+  padding-left: 18px;
+  font-size: var(--t-auxiliar);
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tabela th,
+.tabela td {
+  text-align: left;
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--borda);
+}
+
+.tabela thead th {
+  font-size: var(--t-mini);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--texto-secundario);
+}

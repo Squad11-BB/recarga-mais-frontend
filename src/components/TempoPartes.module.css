@@ -1,0 +1,104 @@
+.partes {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--e1);
+  margin: 0;
+}
+
+.parte {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.icone {
+  color: var(--primaria);
+  display: flex;
+}
+
+.valor {
+  margin: 0;
+  font-size: calc(var(--t-corpo) + 2px);
+  font-weight: 800;
+}
+
+.rotulo {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--t-mini);
+  color: var(--texto-secundario);
+}
+
+.compacto {
+  padding: 10px 12px;
+  background: var(--branco-gelo);
+  border-radius: 14px;
+}
+
+.compacto .parte {
+  align-items: flex-start;
+}
+
+.barraBloco {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.barra {
+  display: flex;
+  gap: 3px;
+  height: 10px;
+}
+
+.barra span {
+  border-radius: 3px;
+}
+
+.viagem {
+  background: var(--primaria);
+}
+
+.fila {
+  background: var(--destaque);
+}
+
+.carga {
+  background: var(--contorno-controle);
+}
+
+.legenda {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  margin: 0;
+}
+
+.legenda div:nth-child(2) {
+  text-align: center;
+}
+
+.legenda div:nth-child(3) {
+  text-align: right;
+}
+
+.legenda dt {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  font-size: var(--t-mini);
+  color: var(--texto-secundario);
+}
+
+.legenda dd {
+  margin: 0;
+  font-weight: 800;
+  font-size: calc(var(--t-corpo) + 1px);
+}
+
+.quadrinho {
+  width: 9px;
+  height: 9px;
+  border-radius: 2px;
+}

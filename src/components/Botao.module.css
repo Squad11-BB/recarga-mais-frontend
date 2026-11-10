@@ -1,0 +1,89 @@
+.botao {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  border-radius: var(--raio-botao);
+  border: 2px solid transparent;
+  font-weight: 700;
+  text-decoration: none;
+  transition:
+    background-color 0.15s,
+    transform 0.05s;
+  -webkit-tap-highlight-color: transparent;
+  user-select: none;
+}
+
+.botao:active:not(:disabled) {
+  transform: scale(0.99);
+}
+
+.total {
+  width: 100%;
+}
+
+/* Alturas: dirigindo 64–72 px no celular e 80–96 px no painel do carro; parado 48–56 px. */
+.dirigindo {
+  min-height: var(--alvo-dirigindo);
+  padding: 0 var(--e4);
+  font-size: calc(var(--t-corpo) + 2px);
+}
+
+.parado {
+  min-height: var(--alvo-parado);
+  padding: 0 var(--e3);
+  font-size: var(--t-corpo);
+}
+
+.compacto {
+  min-height: var(--alvo-minimo);
+  padding: 0 var(--e3);
+  font-size: var(--t-auxiliar);
+  border-radius: 14px;
+}
+
+.primario {
+  background: var(--primaria);
+  color: #fff;
+}
+
+.primario:hover:not(:disabled) {
+  background: var(--primaria-escura);
+}
+
+.secundario {
+  background: var(--superficie);
+  color: var(--texto);
+  border-color: var(--contorno-controle);
+}
+
+.secundario:hover:not(:disabled) {
+  background: var(--branco-gelo);
+}
+
+.texto {
+  background: transparent;
+  color: var(--azul-texto);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+  font-weight: 700;
+}
+
+.botao:disabled {
+  cursor: not-allowed;
+}
+
+.primario[aria-busy='true'] {
+  opacity: 0.92;
+}
+
+.bloqueado {
+  background: var(--branco-gelo) !important;
+  color: var(--texto-secundario) !important;
+  border-color: var(--borda) !important;
+  font-weight: 600;
+}
+
+.girando {
+  animation: girar 0.9s linear infinite;
+}

@@ -1,0 +1,64 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  padding: 2px 8px;
+  border-radius: 999px;
+  font-size: var(--t-mini);
+  font-weight: 700;
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.ia,
+.destaque {
+  background: var(--destaque);
+  color: var(--texto);
+}
+
+.destaque {
+  padding: 3px 10px;
+}
+
+.desatualizado {
+  background: var(--aviso-fundo);
+  color: var(--aviso);
+  border: 1px solid var(--aviso-borda);
+  font-weight: 600;
+}
+
+.parado {
+  background: var(--suave);
+  color: var(--texto-secundario);
+  font-weight: 600;
+}
+
+.compativel {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  color: var(--sucesso);
+  font-size: var(--t-mini);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
+.situacao {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: var(--t-auxiliar);
+  font-weight: 700;
+}
+
+.livre {
+  color: var(--sucesso);
+}
+
+.emUso {
+  color: var(--azul-texto);
+}
+
+.manutencao {
+  color: var(--erro);
+}

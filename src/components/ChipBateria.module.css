@@ -1,0 +1,69 @@
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: var(--alvo-minimo);
+  padding: 0 14px;
+  border-radius: 999px;
+  background: var(--superficie);
+  box-shadow: var(--sombra-card);
+  color: var(--texto);
+  text-decoration: none;
+  font-size: var(--t-corpo);
+}
+
+.raio {
+  color: var(--primaria);
+}
+
+.km {
+  color: var(--texto-secundario);
+  font-size: var(--t-auxiliar);
+}
+
+.expandido {
+  flex-direction: column;
+  align-items: stretch;
+  gap: 8px;
+  padding: 14px 16px;
+  border-radius: var(--raio-card);
+  border: 1px solid var(--borda);
+  box-shadow: none;
+}
+
+.linha {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.pct {
+  font-size: calc(var(--t-titulo) + 4px);
+  font-weight: 800;
+}
+
+.autonomia {
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  line-height: 1.1;
+}
+
+.autonomia small {
+  font-size: var(--t-mini);
+  color: var(--texto-secundario);
+}
+
+.barra {
+  height: 6px;
+  border-radius: 3px;
+  background: var(--suave);
+  overflow: hidden;
+}
+
+.barra span {
+  display: block;
+  height: 100%;
+  background: var(--primaria);
+}

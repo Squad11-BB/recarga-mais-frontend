@@ -1,0 +1,77 @@
+.barra {
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: var(--e2);
+  min-height: var(--alvo-dirigindo);
+  padding: 0 6px 0 var(--e3);
+  background: var(--texto);
+  color: #fff;
+  border-radius: var(--raio-botao);
+}
+
+.lupa {
+  flex: none;
+}
+
+.abrir,
+.entrada {
+  flex: 1;
+  min-width: 0;
+  align-self: stretch;
+  background: transparent;
+  border: 0;
+  color: #fff;
+  font-weight: 700;
+  font-size: calc(var(--t-corpo) + 2px);
+  text-align: left;
+  padding: 0;
+}
+
+.form {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-self: stretch;
+}
+
+.entrada::placeholder {
+  color: #fff;
+  opacity: 1;
+}
+
+.entrada:focus-visible,
+.abrir:focus-visible {
+  outline-color: #fff;
+}
+
+.entrada[readonly] {
+  cursor: default;
+}
+
+.mic {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: calc(var(--alvo-dirigindo) - 12px);
+  height: calc(var(--alvo-dirigindo) - 12px);
+  border-radius: 50%;
+  border: 0;
+  background: var(--primaria);
+  color: #fff;
+}
+
+.mic:focus-visible {
+  outline-color: #fff;
+}
+
+.ouvindo {
+  box-shadow: 0 0 0 0 rgb(80 94 252 / 0.6);
+  animation: pulso 1.2s ease-out infinite;
+}
+
+@keyframes pulso {
+  to {
+    box-shadow: 0 0 0 14px rgb(80 94 252 / 0);
+  }
+}

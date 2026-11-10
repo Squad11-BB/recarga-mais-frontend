@@ -1,0 +1,25 @@
+.grupo {
+  display: flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 999px;
+  background: var(--superficie);
+  box-shadow: var(--sombra-card);
+}
+
+.botao {
+  display: grid;
+  place-items: center;
+  width: 72px;
+  height: 72px;
+  border-radius: 50%;
+  border: 0;
+  background: var(--branco-gelo);
+  color: var(--texto);
+}
+
+/* Silenciado: muda o ícone (com corte) e o fundo, não só a cor. */
+.desligado {
+  background: var(--texto);
+  color: #fff;
+}

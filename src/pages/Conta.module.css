@@ -1,0 +1,45 @@
+.nome {
+  font-size: var(--t-subtitulo);
+  font-weight: 800;
+}
+
+.menu {
+  display: flex;
+  flex-direction: column;
+  gap: var(--e1);
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--e2);
+  min-height: var(--alvo-parado);
+  padding: 0 var(--e3);
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: 16px;
+  color: var(--texto);
+  text-decoration: none;
+  font-weight: 700;
+}
+
+.item svg:last-child {
+  margin-left: auto;
+  color: var(--texto-secundario);
+}
+
+.secao {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: var(--t-corpo);
+  font-weight: 800;
+}
+
+.dados {
+  margin: 0;
+}
+
+.texto p {
+  line-height: 1.55;
+}

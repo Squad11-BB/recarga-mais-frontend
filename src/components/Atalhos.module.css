@@ -1,0 +1,81 @@
+.atalhos {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--e1);
+}
+
+.atalho {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2px;
+  min-height: var(--alvo-dirigindo);
+  border-radius: 16px;
+  border: 1.5px solid var(--contorno-controle);
+  background: var(--superficie);
+  font-weight: 700;
+  font-size: var(--t-auxiliar);
+}
+
+.atalho:hover {
+  background: var(--branco-gelo);
+}
+
+.secao {
+  display: flex;
+  flex-direction: column;
+  gap: var(--e1);
+}
+
+.titulo {
+  font-size: var(--t-auxiliar);
+  font-weight: 700;
+  color: var(--texto-secundario);
+}
+
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: var(--e1);
+}
+
+.item {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  gap: var(--e2);
+  min-height: var(--alvo-dirigindo);
+  padding: 8px var(--e3);
+  border: 1px solid var(--borda);
+  border-radius: 16px;
+  background: var(--superficie);
+  text-align: left;
+}
+
+.icone {
+  color: var(--primaria);
+  flex: none;
+}
+
+.textos {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  min-width: 0;
+}
+
+.textos strong {
+  font-size: calc(var(--t-corpo) + 1px);
+}
+
+.textos small {
+  color: var(--texto-secundario);
+  font-size: var(--t-mini);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}

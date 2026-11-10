@@ -1,0 +1,138 @@
+.subtitulo {
+  margin-top: -8px;
+  color: var(--texto-secundario);
+  font-size: var(--t-auxiliar);
+}
+
+.preenchido {
+  padding: var(--e3);
+  background: var(--branco-gelo);
+  border: 1px solid var(--borda);
+  border-radius: 16px;
+}
+
+.preenchidoTopo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: var(--t-mini);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--texto-secundario);
+}
+
+.editar {
+  min-height: 36px;
+  border: 0;
+  background: none;
+  color: var(--azul-texto);
+  font-weight: 700;
+  font-size: var(--t-auxiliar);
+  text-transform: none;
+  letter-spacing: 0;
+}
+
+.preenchido dl {
+  margin: 8px 0 0;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.preenchido dl div {
+  display: flex;
+  justify-content: space-between;
+}
+
+.preenchido dt {
+  color: var(--texto-secundario);
+}
+
+.preenchido dd {
+  margin: 0;
+  font-weight: 800;
+}
+
+.bateria {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.bateriaTopo {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.bateriaTopo label {
+  font-size: var(--t-auxiliar);
+  color: var(--texto-secundario);
+}
+
+.bateriaTopo output {
+  font-size: var(--t-subtitulo);
+  font-weight: 800;
+}
+
+.slider {
+  appearance: none;
+  width: 100%;
+  height: 32px;
+  background: transparent;
+}
+
+.slider::-webkit-slider-runnable-track {
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--primaria) var(--preenchido), var(--suave) var(--preenchido));
+}
+
+.slider::-moz-range-track {
+  height: 6px;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--primaria) var(--preenchido), var(--suave) var(--preenchido));
+}
+
+.slider::-webkit-slider-thumb {
+  appearance: none;
+  width: 26px;
+  height: 26px;
+  margin-top: -10px;
+  border-radius: 50%;
+  background: var(--primaria);
+  border: 4px solid #fff;
+  box-shadow: 0 1px 4px rgb(15 27 45 / 0.3);
+}
+
+.slider::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: var(--primaria);
+  border: 4px solid #fff;
+  box-shadow: 0 1px 4px rgb(15 27 45 / 0.3);
+}
+
+.rodape {
+  text-align: center;
+  font-size: var(--t-auxiliar);
+  color: var(--texto-secundario);
+}
+
+.link {
+  border: 0;
+  background: none;
+  padding: 4px;
+  color: var(--azul-texto);
+  font-weight: 700;
+  text-decoration: underline;
+  font-size: inherit;
+}
+
+.erro {
+  color: var(--erro);
+  font-size: var(--t-auxiliar);
+  margin-top: -8px;
+}

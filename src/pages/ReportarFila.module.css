@@ -1,0 +1,35 @@
+.pergunta {
+  font-size: var(--t-subtitulo);
+  font-weight: 800;
+  text-align: center;
+}
+
+.contador {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--e4);
+  padding: var(--e2) 0;
+}
+
+.passo {
+  display: grid;
+  place-items: center;
+  width: var(--alvo-dirigindo);
+  height: var(--alvo-dirigindo);
+  border-radius: 18px;
+  border: 1.5px solid var(--contorno-controle);
+  background: var(--superficie);
+}
+
+.passo:disabled {
+  color: var(--borda);
+  border-color: var(--borda);
+}
+
+.valor {
+  min-width: 80px;
+  text-align: center;
+  font-size: var(--t-numero);
+  font-weight: 800;
+}

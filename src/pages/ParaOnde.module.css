@@ -1,0 +1,35 @@
+.topo {
+  display: flex;
+  align-items: center;
+  gap: var(--e2);
+}
+
+.voltar {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: var(--alvo-minimo);
+  height: var(--alvo-minimo);
+  border-radius: 50%;
+  border: 1px solid var(--borda);
+  background: var(--superficie);
+}
+
+.barra {
+  flex: 1;
+  min-width: 0;
+}
+
+.avisoMovimento {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--texto-secundario);
+  font-size: var(--t-auxiliar);
+  margin-top: -4px;
+}
+
+.ouvindo {
+  font-weight: 700;
+  color: var(--azul-texto);
+}

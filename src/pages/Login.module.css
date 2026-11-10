@@ -1,0 +1,30 @@
+.cadastro {
+  text-align: center;
+  font-size: var(--t-auxiliar);
+  color: var(--texto-secundario);
+}
+
+.cadastro a {
+  font-weight: 700;
+}
+
+.painel {
+  display: flex;
+  gap: var(--e2);
+  align-items: flex-start;
+  padding: var(--e3);
+  border-radius: 16px;
+  background: var(--suave);
+  font-size: var(--t-auxiliar);
+}
+
+.painel a {
+  font-weight: 700;
+}
+
+.linkForte {
+  font-weight: 700;
+  min-height: var(--alvo-minimo);
+  display: inline-flex;
+  align-items: center;
+}

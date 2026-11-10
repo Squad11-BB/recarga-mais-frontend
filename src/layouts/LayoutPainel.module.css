@@ -1,0 +1,141 @@
+.painel {
+  min-height: 100%;
+  display: grid;
+  grid-template-columns: var(--largura-barra-lateral) 1fr;
+  background: var(--branco-gelo);
+}
+
+.barraTopo {
+  display: none;
+}
+
+.lateral {
+  position: sticky;
+  top: 0;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: var(--e4);
+  padding: var(--e4) var(--e3);
+  background: var(--superficie);
+  border-right: 1px solid var(--borda);
+}
+
+.marca {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: var(--e1);
+}
+
+.papel {
+  padding: 2px 10px;
+  border-radius: 999px;
+  background: var(--azul-claro);
+  color: var(--azul-texto);
+  font-size: var(--t-mini);
+  font-weight: 700;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.item {
+  display: flex;
+  align-items: center;
+  gap: var(--e2);
+  min-height: 44px;
+  padding: 0 var(--e2);
+  border-radius: 12px;
+  color: var(--texto);
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.item:hover {
+  background: var(--branco-gelo);
+}
+
+.ativo {
+  background: var(--azul-claro);
+  color: var(--azul-texto);
+  font-weight: 800;
+}
+
+.sair {
+  margin-top: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--e2);
+  min-height: 44px;
+  padding: 0 var(--e2);
+  border: 0;
+  border-radius: 12px;
+  background: none;
+  font-weight: 600;
+  color: var(--texto-secundario);
+}
+
+.conteudo {
+  min-width: 0;
+  padding: var(--e4) calc(var(--e4) + 8px);
+}
+
+.botaoMenu {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1px solid var(--borda);
+  background: var(--superficie);
+}
+
+/* Tablet e celular: a barra lateral vira menu recolhível. */
+@media (max-width: 900px) {
+  .painel {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto 1fr;
+  }
+
+  .barraTopo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: var(--e2) var(--e3);
+    background: var(--superficie);
+    border-bottom: 1px solid var(--borda);
+    position: sticky;
+    top: 0;
+    z-index: 20;
+  }
+
+  .lateral {
+    display: none;
+    position: fixed;
+    top: 69px;
+    left: 0;
+    width: min(280px, 85vw);
+    height: calc(100vh - 69px);
+    z-index: 30;
+    box-shadow: 4px 0 24px rgb(15 27 45 / 0.12);
+  }
+
+  .lateral.aberto {
+    display: flex;
+  }
+
+  .lateral .marca > :first-child {
+    display: none;
+  }
+
+  .conteudo {
+    padding: var(--e3);
+  }
+}

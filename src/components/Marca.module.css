@@ -1,0 +1,29 @@
+.marca {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.quadrado {
+  display: grid;
+  place-items: center;
+  flex: none;
+  background: var(--destaque);
+  border-radius: 22%;
+}
+
+.quadrado img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.nome {
+  font-weight: 800;
+  color: var(--primaria);
+  letter-spacing: -0.01em;
+}
+
+.mais {
+  color: var(--primaria);
+}

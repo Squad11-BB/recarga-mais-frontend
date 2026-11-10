@@ -1,0 +1,97 @@
+.segmentos {
+  display: inline-flex;
+  gap: 4px;
+  padding: 4px;
+  border-radius: 14px;
+  background: var(--suave);
+}
+
+.segmento {
+  min-height: 40px;
+  padding: 0 16px;
+  border: 0;
+  border-radius: 10px;
+  background: transparent;
+  font-weight: 700;
+  font-size: var(--t-auxiliar);
+}
+
+.segmentoAtivo {
+  background: var(--primaria);
+  color: #fff;
+}
+
+.grade {
+  display: grid;
+  grid-template-columns: minmax(0, 2fr) minmax(240px, 1fr);
+  gap: var(--e3);
+}
+
+.tituloCartao {
+  font-size: var(--t-corpo);
+  font-weight: 800;
+  margin-bottom: var(--e3);
+}
+
+.grafico {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--e2);
+  height: 220px;
+  padding-bottom: 4px;
+}
+
+.coluna {
+  flex: 1;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 6px;
+}
+
+.barra {
+  width: 100%;
+  max-width: 56px;
+  min-height: 4px;
+  border-radius: 8px 8px 4px 4px;
+  background: var(--primaria);
+}
+
+.barraMaior {
+  background: var(--destaque);
+  outline: 1.5px solid var(--texto);
+  outline-offset: -1.5px;
+}
+
+.valorBarra {
+  font-size: var(--t-mini);
+  font-weight: 700;
+  color: var(--texto-secundario);
+}
+
+.rotuloBarra {
+  font-size: var(--t-mini);
+  color: var(--texto-secundario);
+}
+
+.lista {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.lista li {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--e2);
+  padding: 12px 0;
+  border-bottom: 1px solid var(--borda);
+}
+
+@media (max-width: 900px) {
+  .grade {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,0 +1,86 @@
+.tabelaCartao {
+  overflow-x: auto;
+}
+
+.tabela {
+  width: 100%;
+  border-collapse: collapse;
+  min-width: 620px;
+}
+
+.tabela th,
+.tabela td {
+  text-align: left;
+  padding: 12px 8px;
+  border-bottom: 1px solid var(--borda);
+}
+
+.tabela thead th {
+  font-size: var(--t-mini);
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: var(--texto-secundario);
+  border-bottom-width: 2px;
+}
+
+.nome {
+  font-weight: 800;
+}
+
+.select {
+  min-width: 170px;
+  min-height: 44px;
+  padding: 0 12px;
+  border: 1.5px solid var(--contorno-controle);
+  border-radius: 12px;
+  background: var(--superficie);
+  font-weight: 600;
+}
+
+.contador {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--e2);
+}
+
+.contador button {
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  border: 1.5px solid var(--contorno-controle);
+  background: var(--superficie);
+}
+
+.contador button:disabled {
+  color: var(--borda);
+  border-color: var(--borda);
+}
+
+.contador output {
+  min-width: 28px;
+  text-align: center;
+  font-weight: 800;
+  font-size: 18px;
+}
+
+.ha {
+  color: var(--texto-secundario);
+  font-size: var(--t-auxiliar);
+}
+
+.rodape {
+  display: flex;
+  align-items: center;
+  gap: var(--e3);
+  flex-wrap: wrap;
+  padding-top: var(--e3);
+}
+
+.carregando {
+  display: flex;
+  flex-direction: column;
+  gap: var(--e1);
+}

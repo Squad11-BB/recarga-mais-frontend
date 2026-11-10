@@ -1,0 +1,103 @@
+.mapa {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.area,
+.leaflet {
+  width: 100%;
+  height: 100%;
+}
+
+/* Fundo discreto para o essencial aparecer primeiro. */
+.leaflet :global(.leaflet-tile-pane) {
+  filter: grayscale(0.85) brightness(1.04) contrast(0.92);
+}
+
+.esmaecido .leaflet :global(.leaflet-tile-pane) {
+  filter: grayscale(1) brightness(0.72);
+}
+
+.esmaecido :global(.leaflet-marker-pane),
+.esmaecido :global(.leaflet-overlay-pane) {
+  opacity: 0;
+}
+
+.marcador {
+  background: none;
+  border: 0;
+  position: relative;
+}
+
+.marcador svg {
+  display: block;
+  filter: drop-shadow(0 2px 2px rgb(15 27 45 / 0.25));
+}
+
+.etiqueta {
+  position: absolute;
+  bottom: calc(100% + 2px);
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 3px 8px;
+  border-radius: 8px;
+  background: #fff;
+  border: 1.5px solid var(--texto);
+  font-size: 12px;
+  font-weight: 800;
+  color: var(--texto);
+  white-space: nowrap;
+}
+
+.usuario {
+  display: block;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--primaria);
+  border: 4px solid #fff;
+  box-shadow: 0 0 0 6px rgb(80 94 252 / 0.2);
+}
+
+.origem {
+  display: block;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: var(--texto);
+  border: 3px solid #fff;
+}
+
+.centralizar {
+  position: absolute;
+  right: var(--e3);
+  z-index: 500;
+  display: grid;
+  place-items: center;
+  width: 52px;
+  height: 52px;
+  border-radius: 50%;
+  border: 0;
+  background: var(--superficie);
+  color: var(--texto);
+  box-shadow: var(--sombra-card);
+}
+
+.centralizar:disabled {
+  color: var(--contorno-controle);
+}
+
+.rotulo {
+  position: absolute;
+  top: var(--e3);
+  left: var(--e3);
+  z-index: 500;
+  padding: 6px 12px;
+  border-radius: 10px;
+  background: var(--superficie);
+  box-shadow: var(--sombra-card);
+  font-weight: 700;
+  font-size: var(--t-auxiliar);
+}

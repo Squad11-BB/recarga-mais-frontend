@@ -1,0 +1,132 @@
+/* Estrutura comum das telas do app. */
+
+.tela {
+  display: flex;
+  flex-direction: column;
+  gap: var(--e3);
+  min-height: 100%;
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto;
+  padding: calc(var(--e3) + env(safe-area-inset-top)) var(--e3) calc(var(--e4) + env(safe-area-inset-bottom));
+}
+
+@media (min-width: 1000px) and (orientation: landscape) {
+  .tela {
+    max-width: none;
+    padding: var(--e4);
+  }
+}
+
+.empurrar {
+  margin-top: auto;
+}
+
+.pilha {
+  display: flex;
+  flex-direction: column;
+  gap: var(--e2);
+}
+
+.pilhaPequena {
+  display: flex;
+  flex-direction: column;
+  gap: var(--e1);
+}
+
+.secaoTitulo {
+  font-size: var(--t-auxiliar);
+  font-weight: 700;
+  color: var(--texto-secundario);
+}
+
+.nota {
+  font-size: var(--t-mini);
+  color: var(--texto-secundario);
+}
+
+.cartao {
+  display: flex;
+  flex-direction: column;
+  gap: var(--e2);
+  padding: var(--e3);
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-card);
+}
+
+.centro {
+  text-align: center;
+}
+
+.icone-circulo,
+.iconeCirculo {
+  align-self: center;
+  display: grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  background: var(--azul-claro);
+  color: var(--primaria);
+}
+
+.titulo {
+  font-size: var(--t-titulo);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.subtitulo {
+  color: var(--texto-secundario);
+  font-size: var(--t-auxiliar);
+}
+
+.linhaInfo {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--e2);
+  min-height: 48px;
+  border-bottom: 1px solid var(--borda);
+}
+
+.linhaInfo dt {
+  color: var(--texto-secundario);
+}
+
+.linhaInfo dd {
+  margin: 0;
+  font-weight: 800;
+}
+
+/* Folha das telas sobre o mapa (consentimento, veículo). */
+.folhaFixa {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: auto;
+  max-height: 92%;
+  overflow-y: auto;
+}
+
+@media (min-width: 1000px) and (orientation: landscape) {
+  .folhaFixa {
+    position: static;
+    max-height: none;
+    min-height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0;
+    box-shadow: none;
+  }
+}
+
+.esqueletoTela {
+  display: flex;
+  flex-direction: column;
+  gap: var(--e2);
+  padding: var(--e3);
+}

@@ -1,0 +1,85 @@
+.tela {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: var(--e3);
+  padding: calc(var(--e3) + env(safe-area-inset-top)) var(--e3) calc(var(--e3) + env(safe-area-inset-bottom));
+}
+
+.instrucao {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: var(--e3);
+  padding: var(--e3) var(--e4);
+  border-radius: var(--raio-card);
+  background: var(--primaria);
+  color: #fff;
+  box-shadow: var(--sombra-card);
+}
+
+.distancia {
+  font-size: calc(var(--t-titulo) + 6px);
+  font-weight: 800;
+  line-height: 1.1;
+}
+
+.rua {
+  font-weight: 600;
+  opacity: 0.92;
+}
+
+.base {
+  pointer-events: auto;
+  display: flex;
+  flex-direction: column;
+  gap: var(--e2);
+}
+
+.resumo {
+  padding: var(--e3);
+  border-radius: var(--raio-card);
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  box-shadow: var(--sombra-card);
+}
+
+.resumoLinha {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+}
+
+.tempo {
+  font-size: calc(var(--t-titulo) + 6px);
+  font-weight: 800;
+}
+
+.km {
+  font-weight: 800;
+  font-size: var(--t-corpo);
+}
+
+.chegada {
+  font-size: var(--t-auxiliar);
+  color: var(--texto-secundario);
+}
+
+.fila {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 6px;
+  font-weight: 600;
+}
+
+@media (min-width: 1000px) and (orientation: landscape) {
+  .tela {
+    padding: var(--e4);
+  }
+
+  .resumo {
+    box-shadow: none;
+  }
+}

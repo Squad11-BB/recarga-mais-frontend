@@ -1,0 +1,92 @@
+.calculando {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+  padding: var(--e4) 0 var(--e2);
+  text-align: center;
+}
+
+.calculandoTitulo {
+  font-size: var(--t-subtitulo);
+  font-weight: 800;
+  max-width: 260px;
+}
+
+.giro {
+  animation: girar 1s linear infinite;
+  color: var(--primaria);
+}
+
+.etapas {
+  list-style: none;
+  margin: 0;
+  padding: 6px var(--e3);
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-card);
+}
+
+.etapa {
+  display: flex;
+  align-items: center;
+  gap: var(--e2);
+  min-height: 44px;
+}
+
+.etapaRotulo {
+  flex: 1;
+}
+
+.etapa[data-situacao='na fila'] .etapaRotulo {
+  color: var(--texto-secundario);
+}
+
+.etapaSituacao {
+  font-size: var(--t-mini);
+  font-weight: 700;
+  color: var(--texto-secundario);
+}
+
+.etapa[data-situacao='pronto'] .etapaSituacao {
+  color: var(--sucesso);
+}
+
+.etapa[data-situacao='calculando'] .etapaSituacao {
+  color: var(--azul-texto);
+}
+
+.ok {
+  color: var(--sucesso);
+}
+
+.azul {
+  color: var(--primaria);
+}
+
+.cinza {
+  color: var(--contorno-controle);
+}
+
+.esqueleto {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: var(--e3);
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-card);
+}
+
+.destino {
+  margin-top: -8px;
+  color: var(--texto-secundario);
+  font-weight: 600;
+}
+
+.codigo {
+  display: block;
+  margin-top: 4px;
+  font-size: var(--t-mini);
+  color: var(--texto-secundario);
+}

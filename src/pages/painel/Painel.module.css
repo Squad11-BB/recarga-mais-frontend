@@ -1,0 +1,110 @@
+/* Estilos comuns do painel web. */
+
+.publico {
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: var(--e4) var(--e3);
+  background: var(--branco-gelo);
+}
+
+.cartaoLogin {
+  width: 100%;
+  max-width: 420px;
+  display: flex;
+  flex-direction: column;
+  gap: var(--e3);
+  padding: calc(var(--e4) + 4px);
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-card);
+}
+
+.titulo {
+  font-size: var(--t-titulo);
+  font-weight: 800;
+  line-height: 1.15;
+}
+
+.subtitulo {
+  color: var(--texto-secundario);
+  font-size: var(--t-auxiliar);
+}
+
+.nota {
+  font-size: var(--t-mini);
+  color: var(--texto-secundario);
+  text-align: center;
+}
+
+.separador {
+  border: 0;
+  border-top: 1px solid var(--borda);
+  margin: var(--e1) 0;
+}
+
+.linkCentro {
+  align-self: center;
+  font-weight: 700;
+  font-size: var(--t-auxiliar);
+  background: none;
+  border: 0;
+  color: var(--azul-texto);
+  text-decoration: underline;
+  padding: 6px;
+}
+
+.pilha {
+  display: flex;
+  flex-direction: column;
+  gap: var(--e2);
+}
+
+.cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  gap: var(--e3);
+  flex-wrap: wrap;
+  margin-bottom: var(--e4);
+}
+
+.sobretitulo {
+  font-size: var(--t-auxiliar);
+  color: var(--texto-secundario);
+}
+
+.cartao {
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-card);
+  padding: var(--e3) var(--e4);
+}
+
+.estatisticas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(170px, 1fr));
+  gap: var(--e3);
+  margin-bottom: var(--e3);
+}
+
+.estatistica {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding: var(--e3) var(--e4);
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: var(--raio-card);
+}
+
+.estatistica span {
+  font-size: var(--t-auxiliar);
+  color: var(--texto-secundario);
+}
+
+.estatistica strong {
+  font-size: 30px;
+  font-weight: 800;
+}

@@ -1,0 +1,132 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--e2);
+  padding: var(--e3);
+  background: var(--superficie);
+  border-radius: var(--raio-card);
+  border: 1px solid var(--borda);
+}
+
+.melhor {
+  border: 2px solid var(--primaria);
+  box-shadow: var(--sombra-card);
+}
+
+.topo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--e1);
+  flex-wrap: wrap;
+}
+
+.linkNome {
+  color: inherit;
+  text-decoration: none;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.nomePequeno {
+  font-size: calc(var(--t-corpo) + 3px);
+  font-weight: 800;
+}
+
+.resumo {
+  font-size: var(--t-auxiliar);
+  color: var(--texto-secundario);
+}
+
+.resumo strong {
+  color: var(--texto);
+}
+
+.nome {
+  font-size: var(--t-subtitulo);
+  font-weight: 800;
+}
+
+.total {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+  margin-top: -4px;
+}
+
+.numeroGrande {
+  font-size: var(--t-numero);
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -0.02em;
+}
+
+.noTotal {
+  color: var(--texto-secundario);
+  font-size: var(--t-auxiliar);
+}
+
+.rodape {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: var(--e2);
+  font-size: var(--t-mini);
+  color: var(--texto-secundario);
+}
+
+.porQue {
+  flex: none;
+  font-weight: 700;
+  font-size: var(--t-auxiliar);
+  color: var(--azul-texto);
+  min-height: var(--alvo-minimo);
+  display: inline-flex;
+  align-items: center;
+}
+
+.alternativa {
+  display: flex;
+  align-items: center;
+  gap: var(--e2);
+  min-height: var(--alvo-dirigindo);
+  padding: 10px var(--e3);
+  background: var(--superficie);
+  border: 1px solid var(--borda);
+  border-radius: 16px;
+  color: var(--texto);
+  text-decoration: none;
+}
+
+.altTexto {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 2px;
+}
+
+.altTexto small {
+  font-size: var(--t-mini);
+  color: var(--texto-secundario);
+}
+
+.altTempo {
+  font-size: calc(var(--t-corpo) + 1px);
+}
+
+.selos {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.adequacao {
+  font-size: var(--t-auxiliar);
+  color: var(--texto-secundario);
+}
+
+.adequacao strong {
+  color: var(--texto);
+}

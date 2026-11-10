@@ -1,0 +1,33 @@
+.cabecalho {
+  display: flex;
+  align-items: center;
+  gap: var(--e2);
+  min-height: 56px;
+}
+
+.voltar {
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: var(--alvo-minimo);
+  height: var(--alvo-minimo);
+  border-radius: 50%;
+  border: 1px solid var(--borda);
+  background: var(--superficie);
+  color: var(--texto);
+}
+
+.titulo {
+  flex: 1;
+  font-size: calc(var(--t-subtitulo) + 2px);
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.titulo:focus {
+  outline: none;
+}
+
+.direita {
+  flex: none;
+}

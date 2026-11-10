@@ -1,0 +1,67 @@
+.app {
+  position: relative;
+  height: 100%;
+  overflow: hidden;
+  background: var(--branco-gelo);
+}
+
+.areaMapa {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+}
+
+.painel {
+  position: absolute;
+  inset: 0;
+  z-index: 10;
+}
+
+/* Celular: tela sobre o mapa. Só os elementos da tela recebem toque. */
+.painel[data-modo='sobreMapa'] {
+  pointer-events: none;
+}
+
+.painel[data-modo='sobreMapa'] > * {
+  pointer-events: none;
+}
+
+.painel[data-modo='tela'] {
+  background: var(--branco-gelo);
+  overflow-y: auto;
+}
+
+.som {
+  position: absolute;
+  top: var(--e3);
+  right: var(--e3);
+  z-index: 600;
+}
+
+/* Painel do carro: coluna de ações de 440 px do lado do motorista e mapa ao lado. */
+@media (min-width: 1000px) and (orientation: landscape) {
+  .app {
+    display: grid;
+    grid-template-columns: var(--largura-painel-acoes) 1fr;
+  }
+
+  .painel,
+  .painel[data-modo='sobreMapa'],
+  .painel[data-modo='tela'] {
+    position: relative;
+    inset: auto;
+    pointer-events: auto;
+    background: var(--superficie);
+    border-right: 1px solid var(--borda);
+    overflow-y: auto;
+  }
+
+  .painel[data-modo='sobreMapa'] > * {
+    pointer-events: auto;
+  }
+
+  .areaMapa {
+    position: relative;
+    inset: auto;
+  }
+}

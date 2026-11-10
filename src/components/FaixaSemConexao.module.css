@@ -1,0 +1,32 @@
+.faixa {
+  position: fixed;
+  top: env(safe-area-inset-top);
+  left: 0;
+  right: 0;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  gap: var(--e2);
+  padding: 8px var(--e3);
+  background: var(--texto);
+  color: #fff;
+  font-weight: 700;
+}
+
+.botao {
+  margin-left: auto;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  min-height: 40px;
+  padding: 0 14px;
+  border-radius: 12px;
+  border: 1.5px solid #fff;
+  background: transparent;
+  color: #fff;
+  font-weight: 700;
+}
+
+.botao:focus-visible {
+  outline-color: #fff;
+}

@@ -1,0 +1,67 @@
+.campo {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.rotulo {
+  font-size: var(--t-auxiliar);
+  color: var(--texto-secundario);
+  font-weight: 500;
+}
+
+.caixa {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  min-height: 48px;
+  padding: 0 14px;
+  background: var(--superficie);
+  border: 1.5px solid var(--contorno-controle);
+  border-radius: var(--raio-campo);
+}
+
+.caixa:focus-within {
+  outline: 4px solid var(--texto);
+  outline-offset: 1px;
+  border-color: var(--texto);
+}
+
+.caixa input {
+  flex: 1;
+  min-width: 0;
+  border: 0;
+  background: transparent;
+  padding: 12px 0;
+  font-size: var(--t-corpo);
+}
+
+.caixa input:focus-visible {
+  outline: none;
+}
+
+.caixa input::placeholder {
+  color: var(--texto-secundario);
+}
+
+.icone {
+  display: flex;
+  color: var(--texto-secundario);
+}
+
+.comErro {
+  border-color: var(--erro);
+}
+
+.erro {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: var(--erro);
+  font-size: var(--t-auxiliar);
+}
+
+.ajuda {
+  color: var(--texto-secundario);
+  font-size: var(--t-auxiliar);
+}
